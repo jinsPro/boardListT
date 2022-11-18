@@ -82,7 +82,7 @@ public class BookController {
 	public String DetailListDel(Model model, BookInfoVO bi, @RequestParam("bno") int bno) {
 				
 		this.bookService.delList(bno);
-		
+		System.out.println("gg");
 		return "redirect:/bookList";
 	}
 }
